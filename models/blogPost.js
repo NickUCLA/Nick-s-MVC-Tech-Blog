@@ -1,12 +1,11 @@
+// Imports
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+class BlogPost extends Model {}
 
-class Post extends Model {}
-
-Post.init(
+// BlogPost Table Model
+BlogPost.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -18,24 +17,30 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    content: {
+    description: {
       type: DataTypes.TEXT,
+    },
+    date_created: {
+      type: DataTypes.DATE,
       allowNull: false,
+      defaultValue: DataTypes.NOW,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       references: {
-        model: "user", // Assuming you have a 'user' table
+        model: "user",
         key: "id",
       },
     },
   },
   {
     sequelize,
-    timestamps: true, // You can set this to true if you want to track timestamps like createdAt and updatedAt
-    modelName: "post",
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: "blogPost",
   }
 );
 
-module.exports = Post;
+// Export
+module.exports = BlogPost;
