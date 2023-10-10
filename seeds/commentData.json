@@ -1,0 +1,20 @@
+[
+  {
+    "comment_body": "This is mind-blowing! I never thought about quantum computing in the context of cybersecurity. Great read!",
+    "date_created": "August 20, 2023",
+    "user_id": 2,
+    "blogPost_id": 1
+  },
+  {
+    "comment_body": "I agree, ethical considerations in AI are crucial. We need more regulations and awareness to ensure responsible AI development.",
+    "date_created": "September 10, 2023",
+    "user_id": 1,
+    "blogPost_id": 2
+  },
+  {
+    "comment_body": "DeFi is revolutionary! The ability to participate in financial activities without traditional banks is empowering. Are there any DeFi projects you recommend?",
+    "date_created": "October 25, 2023",
+    "user_id": 3,
+    "blogPost_id": 3
+  }
+]
