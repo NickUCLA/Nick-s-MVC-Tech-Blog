@@ -19,13 +19,11 @@ This is a full-stack application designed for users to create and engage with te
 
 ## Live URL
 
-[Explore the app here]()
+[Explore the app here](https://lit-dusk-22956-b49298a97cc6.herokuapp.com/)
 
 ## Screenshots
 
-![Screenshot1]()
-
-![Screenshot2]()
+![Screenshot1](./images/screenshot.png)
 
 ## Technologies Used
 
